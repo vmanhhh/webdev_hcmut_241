@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+<head>
+    <title>Phan 1 - Bai 2</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="content">
+        <img src="image/logo.png" alt="logo">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim
+            id est laborum</p>
+        <h1>Intro</h1>
+        <video width="400" controls>
+            <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML5 video.
+        </video>
+        <h2>Our Locations</h2>
+        <ul>
+            <li>USA
+                <ul>
+                    <li><a href="">New York</a></li>
+                    <li><a href="">Columbus</a></li>
+                    <li><a href="">Austin</a></li>
+                    <li><a href="">Philly</a></li>
+                </ul>
+            </li>
+            <li>World
+                <ul>
+                    <li><a href="">Ottawa</a></li>
+                    <li><a href="">Sydney</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Upcoming Classes</h2>
+        <table>
+            <tr>
+                <th>Location</th>
+                <th>Topic</th>
+            </tr>
+            <tr>
+                <td>New York</td>
+                <td>JavaScript & jQuery</td>
+            </tr>
+            <tr>
+                <td>San Francisco</td>
+                <td>HTML & CSS</td>
+            </tr>
+        </table>
+        <h1>Sign Up!</h1>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="location">Location:</label>
+            <select name="location" id="location">
+                <option value="san_francisco">San Francisco</option>
+                <option value="sydney">Sydney</option>
+            </select><br><br>
+            <fieldset>
+                <legend for="gender">Gender:</legend>
+                <input type="radio" name="gender" id="Female"><label for="Female">Female</label>
+                <input type="radio" name="gender" id="Male"><label for="Male">Male</label>
+            </fieldset> <br>
+            <label for="Experience">Experience:</label> <br>
+            <textarea name="Experience" id="Experience" cols="15" rows="2"></textarea><br><br>
+            <input type="submit" value="Sign Up">
+        </form><br>
+    </div>
+    <footer>
+        <a href="">X</a> |
+        <a href="">Facebook</a> |
+        <a href="">Flickr</a>
+    </footer>
+
+</body>
+
+</html>
