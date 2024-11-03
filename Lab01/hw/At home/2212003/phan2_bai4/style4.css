@@ -1,0 +1,84 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    height: 50px;
+    background-color: #808080;
+}
+header h1 {
+    margin-left: 10px;
+}
+
+nav {
+    height: 50px;
+    line-height: 50px;
+    background-color: #0000ff;
+    padding-left: 20px;
+}
+nav a{
+    color: white;
+    padding-left: 10px;
+}
+
+
+.col1 {
+    height: 100%;
+    float: left;
+    width: 250px;
+}
+.col2 {
+    float: left;
+    width: 550px;
+}
+ul {
+    margin-top: 0;
+}
+.col1row1 {
+    height: 150px;
+    width: 100%;
+    background-color: #ffff00;
+    float: left;
+}
+.col1row2 {
+    height: 150px;
+    width: 100%;
+    background-color: #808080;
+    float: left;
+}
+.col2row1 {
+    padding: 10px 10px;
+}
+.col2row2_left {
+    float: left;
+    height: 128px;
+    width: 275px;
+    background-color: green;
+}
+.col2row2_right {
+    float: left;
+    height: 128px;
+    width: 275px;
+    background-color: red;
+}
+.col2row2_left p, .col2row2_right p {
+    padding: 20px 10px;
+    font-weight: bold;
+    text-align: 64px;
+    font-size: 16px;
+}
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 50px;
+    background-color: #0000ff;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+  }
