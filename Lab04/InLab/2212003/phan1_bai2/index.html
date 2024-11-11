@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 1 - Bài 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-blue-600 p-4 text-white">
+        <h1 class="text-3xl font-bold">Cookies Management</h1>
+    </header>
+    <main class="p-4">
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+            <!-- Button to open the modal -->
+            <button id="openModal" class="w-full bg-blue-600 text-white p-2 rounded-md">Create Cookies</button>
+
+            <!-- The Modal -->
+            <div id="cookieModal" class="fixed z-10 inset-0 overflow-y-auto hidden">
+                <div class="flex items-center justify-center min-h-screen">
+                    <div class="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
+                        <h2 class="text-2xl font-semibold mb-4">Manage Your Cookies</h2>
+                        <form id="cookieForm" class="space-y-4">
+                            <div>
+                                <label for="cookieName" class="block text-sm font-medium text-gray-700">Cookie Name</label>
+                                <input type="text" id="cookieName" name="cookieName" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                            </div>
+                            <div>
+                                <label for="cookieValue" class="block text-sm font-medium text-gray-700">Cookie Value</label>
+                                <input type="text" id="cookieValue" name="cookieValue" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                            </div>
+                            <div>
+                                <label for="cookieExpiry" class="block text-sm font-medium text-gray-700">Expiry Days</label>
+                                <input type="number" id="cookieExpiry" name="cookieExpiry" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2" required>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md">Add Cookie</button>
+                            <button type="button" id="updateCookieBtn" class="w-full bg-green-600 text-white p-2 rounded-md hidden">Update Cookie</button>
+                        </form>
+                        <button id="closeModal" class="mt-4 w-full bg-gray-600 text-white p-2 rounded-md">Close</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6">
+                <h2 class="text-2xl font-semibold mb-4">Current Cookies</h2>
+                <table id="cookieTable" class="min-w-full bg-white border border-gray-300">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2 border-b">Name</th>
+                            <th class="px-4 py-2 border-b">Value</th>
+                            <th class="px-4 py-2 border-b">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cookieList"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById('openModal').addEventListener('click', function() {
+                document.getElementById('cookieModal').classList.remove('hidden');
+            });
+
+            document.getElementById('closeModal').addEventListener('click', function() {
+                document.getElementById('cookieModal').classList.add('hidden');
+                document.getElementById('cookieForm').reset();
+                document.getElementById('updateCookieBtn').classList.add('hidden');
+                document.querySelector('button[type="submit"]').classList.remove('hidden');
+            });
+        </script>
+    </main>
+    <script src="cookies.js"></script>
+</body>
+</html>
