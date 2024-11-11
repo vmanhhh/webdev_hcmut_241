@@ -1,0 +1,59 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 0.6rem;
+}
+@media screen and (min-width: 576px) {
+    html {
+      font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    html {
+      font-size: 1rem;
+    }
+} 
+@media screen and (min-width: 992px) {
+    html {
+      font-size: 1rem;
+    }
+}
+
+/* header */
+header .nav-item a {
+    text-decoration: underline;
+    color: blue;
+}
+header .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* main */
+.row {
+    --bs-gutter-x: 0;
+}
+main .name-list{
+    background-color: rgb(227, 224, 224);
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+}
+main .list-1 a, .list-2 a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+.content {
+    height: 600px;
+}
+
+
+/*  */
+footer .info {
+	font-size: 20px;
+	padding-top: 10px;
+}
